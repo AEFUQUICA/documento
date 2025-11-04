@@ -3,24 +3,26 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Google Docs PDF</title>
+		<title>Document Viewer</title>
 		<style>
+			html,
 			body {
 				margin: 0;
-				height: 100vh;
-				display: flex;
-				flex-direction: column;
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
 			}
 			iframe {
-				flex: 1;
 				border: none;
 				width: 100%;
+				height: 100%;
 			}
 		</style>
 	</head>
 	<body>
 		<iframe
-			src="https://docs.google.com/document/d/e/2PACX-1vR3itGVZSey3-IvtOLFa8TdCdYE1NjFfsnaqIPix83UvU5hMDR_HlNbHCWH1TOeUkqj47dUBDIWL0nU/pub?embedded=true"
+			src="viewer/viewer.html?file=../pdf/Legislação da AEFUQUICA.pdf"
+			title="Legislação da AEFUQUICA"
 		></iframe>
 	</body>
 </html>
