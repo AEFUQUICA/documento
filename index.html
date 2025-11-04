@@ -3,26 +3,67 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document Viewer</title>
+		<title>A.E.F.U.Q.U.I.C.A. Official Document</title>
 		<style>
-			html,
+			@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
 			body {
 				margin: 0;
-				height: 100%;
-				width: 100%;
-				overflow: hidden;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				font-family: "Montserrat", sans-serif;
+				background: linear-gradient(135deg, #003366, #0066cc);
+				color: #fff;
+				text-align: center;
 			}
-			iframe {
-				border: none;
-				width: 100%;
-				height: 100%;
+
+			h1 {
+				font-size: 2.2rem;
+				margin-bottom: 0.5rem;
+			}
+
+			p {
+				font-size: 1rem;
+				max-width: 500px;
+				line-height: 1.6;
+				margin: 0 auto 2rem;
+			}
+
+			a.button {
+				background-color: #ffffff;
+				color: #003366;
+				text-decoration: none;
+				padding: 0.75rem 2rem;
+				border-radius: 30px;
+				font-weight: 600;
+				font-size: 1rem;
+				transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+			}
+
+			a.button:hover {
+				background-color: #003366;
+				color: #ffffff;
+				transform: scale(1.05);
+			}
+
+			footer {
+				position: absolute;
+				bottom: 10px;
+				font-size: 0.8rem;
+				opacity: 0.8;
 			}
 		</style>
 	</head>
 	<body>
-		<iframe
-			src="viewer/viewer.html?file=../pdf/Legislação da AEFUQUICA.pdf"
-			title="Legislação da AEFUQUICA"
-		></iframe>
+		<h1>A.E.F.U.Q.U.I.C.A. Official Document</h1>
+		<p>
+			Click below to view the official document in our secure online PDF viewer.
+		</p>
+		<a href="viewer.html" class="button">📄 View Document</a>
+
+		<footer>© 2025 A.E.F.U.Q.U.I.C.A. All rights reserved.</footer>
 	</body>
 </html>
